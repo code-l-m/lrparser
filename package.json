@@ -1,0 +1,20 @@
+{
+  "name": "cdprojectmv",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "prebuild": "rimraf ./dist"
+  },
+  "keywords": [
+  ],
+  "author": "Mohak AND Vivek",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

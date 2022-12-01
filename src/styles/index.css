@@ -1,0 +1,170 @@
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: blueviolet;
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+
+}
+
+
+main {
+  margin: 0.5em;
+}
+
+
+textarea,
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: auto;
+  font-family: monospace;
+}
+
+.container:empty {
+  display: none;
+}
+
+textarea,
+.code-container,
+th,
+td {
+  border: 1px solid #aab;
+}
+
+textarea {
+  height: 20em;
+}
+
+.code-container {
+  max-height: 40em;
+}
+
+.code-container pre {
+  margin: 0.25em;
+  line-height: 1.25;
+}
+
+table {
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #eee;
+  text-align: center;
+}
+
+#parse-table-container td,
+#parse-steps-container td:nth-child(4) {
+  text-align: center;
+}
+
+#parse-steps-container td:nth-child(3) {
+  text-align: right;
+}
+
+th.action {
+  color: red;
+}
+
+th.goto {
+  color: blue;
+}
+
+
+i {
+  display: inline-block;
+  min-width: 3em;
+  text-align: right;
+  color: gray;
+}
+
+b {
+  font-weight: normal;
+  background-color: #eee;
+  padding: 0 0.15em;
+  margin: 0 0.15em;
+}
+
+.start-symbol {
+  color: green;
+}
+
+.non-terminal {
+  color: blue;
+}
+
+.terminal {
+  color: red;
+}
+
+.end-marker {
+  color: purple !important;
+}
+
+.lookahead {
+  color: red;
+  background-color: #ffc !important;
+}
+
+.stack-item {
+  color: black;
+}
+
+.tree-container ul {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-bottom: 5px;
+  background-position: 75px 0;
+  background-repeat: repeat-y;
+}
+
+.tree-container ul:last-child {
+  background-position: 75px 0, 25px 0, 24px 0;
+  background-repeat: repeat-y, no-repeat, repeat-y;
+}
+
+.tree-container > ul {
+  background-position: 75px 0;
+  background-repeat: repeat-y;
+  margin: 0 0 0 -50px;
+}
+
+.tree-container li {
+  padding-left: 25px;
+  margin-left: -25px;
+  background-position: 0 25px;
+  background-repeat: no-repeat;
+}
+
+.tree-container > ul > li {
+  background-image: none;
+}
+
+.tree-container li span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 4px;
+  border: 1px solid gray;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tree-container li.non-terminal span {
+  background-color: #eef;
+}
+
+.tree-container li.terminal span {
+  background-color: #fee;
+}
